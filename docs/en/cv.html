@@ -1,10 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+  <title>Sergei Bevzenko CV</title>
+  <style>
+      h1, h3 {
+          margin: 0;
+      }
 
+      body {
+          font-family: system-ui;
+          max-height: 100%;
+          margin: 2rem;
+      }
+
+      .table-3-column {
+          display: table;
+          width: 100%;
+          vertical-align: bottom;
+      }
+
+      .first-column {
+          display: table-cell;
+          width: 33%;
+          text-align: left;
+      }
+
+      .middle-column {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+      }
+
+      .last-column {
+          display: table-cell;
+          width: 33%;
+          text-align: right;
+      }
+
+      .table-2-column {
+          display: table;
+          width: 100%;
+          margin-bottom: 1rem;
+
+      }
+
+      .table-2-column td:nth-child(1) {
+          max-width: 30%;
+          word-wrap: normal;
+          padding-right: 4rem;
+      }
+
+      .heading {
+          text-transform: uppercase;
+          margin-top: 1rem;
+      }
+
+      .justify-content {
+          text-align: justify;
+      }
+
+      .link {
+          text-decoration: none;
+          color: cadetblue;
+      }
+
+      .company-descr {
+          width: 80%;
+      }
+
+      /* тут можно менять размер шрифт,а лучше один стиль и добавить к многословным абзацам  */
+      p, ul, li, .link {
+          font-size: clamp(1rem, calc(12px + 1vw), 14px);
+      }
+
+      .job-container {
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .job-title {
+          text-align: right;
+      }
+
+      .job-duration {
+          text-align: left;
+      }
+
+      /* Стиль только для печати */
+      @media print {
+          body {
+              font-size: 12pt; /* Меняем размер шрифта для печати */
+          }
+
+          h1 {
+              margin: 12pt;
+          }
+      }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <table class="table-3-column ">
+    <tbody>
+    <tr>
+      <td class="first-column">
+        <a href="https://www.linkedin.com/in/sergei-bevzenko/">linkedin.com/in/sergei-bevzenko</a>
+        <br>
+        <span>(+381) 638-021-986 </span>
+      </td>
+      <td class="middle-column">
+        <h1>Sergei Bevzenko</h1>
+        <!--<p>Senior Software developer</p>-->
+      </td>
+      <td class="last-column">
+        <a href="#">bevzenko.sergey@gmail.com</a>
+        <br>
+        <!--<span>Novi Sad, Serbia</span>-->
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <hr>
+  <section>
+    <p>
+      I am an experienced programmer with 14 years of experience developing web applications and services,
+      specializing in backend development. Throughout my career, I keep up to date with new technologies and
+      constantly improve my and my colleagues' development processes.<br>
+
+      If we talk about the highlights of my career, I have successfully handled technically complex large projects
+      with a large zone of uncertainty. In particular, I was involved in optimizing services, selecting and
+      implementing new technologies, as well as researching and implementing new functionality. Most importantly,
+      this had a direct impact on company revenues.<br>
+
+      When I'm not programming, I enjoy participating in team sports and competitions. I am confident that my
+      extensive experience, technical skills and passion for emerging technologies will make me a valuable member
+      of any team.
+    </p>
+  </section>
+  <hr>
+  <section class="prof-experience">
+    <h2 class="heading">Professional experience</h2>
+    <div class="prof-experience-list">
+      <div class="prof-experience-list">
+        <div class="job-container">
+          <div class="job-title">
+            <h3>Senior Software Engineer</h3>
+          </div>
+          <div class="job-duration">Jul 2022 - Present</div>
+        </div>
+        <div class="company-descr">
+          Yandex LLC - Russian multinational technology company providing Internet-related products and
+          services, including an Internet search engine<br>
+          <a href="https://yandex.ru/company/">yandex.ru/company/</a><br>
+          Moscow, Russia
+        </div>
+        <div class="job-descr">
+          I work in the load testing tools team.
+          We are building a cloud-based load testing tool that makes it easy to create and configure load generators in
+          the cloud.
+          Also the main maintainer of the open source load generator Yandex Pandora https://github.com/yandex/pandora
+          <ul>
+            <li>release cycle</li>
+            <li>functionality development and improvement</li>
+            <li>promotion of the tool inside and outside Yandex</li>
+          </ul>
+        </div>
+        <div class="position-skills">
+          <strong>Skills</strong>: Cloud Infrastructure · Distributed Systems · System Performance · Computer Science ·
+          Software Infrastructure · Engineering · Load Testing · ClickHouse · Cloud Computing · PostgreSQL · Go · Redis
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="education">
+    <h2 class="heading">Education</h2>
+    <ul class="education-list">
+      <li class="education-item">
+        <div class="education-title">
+          <div class="education-university">
+            Far Eastern State Technical University (V. V. Kuibyshev DVPI) in Vladivostok
+          </div>
+          <div class="education-grade"><strong>Master</strong> of Engineering and Technology</div>
+          <div class="education-more">
+            in the direction of "Technology, equipment and automation of machine-building productions"
+          </div>
+        </div>
+        <div class="education-years">2006 - 2008</div>
+      </li>
+      <li class="education-item">
+        <div class="education-title">
+          <div class="education-university">
+            Far Eastern State Technical University (V. V. Kuibyshev DVPI) in Vladivostok
+          </div>
+          <div class="education-grade"><strong>Bachelor</strong> of engineering and technology (with honors)</div>
+          <div class="education-more">
+            in the direction of "Technology, equipment and automation of machine-building productions"
+          </div>
+        </div>
+        <div class="education-years">2002 - 2006</div>
+      </li>
+    </ul>
+  </section>
+  <hr>
+  <section class="skills">
+    <h2 class="heading">Skills</h2>
+    <hr>
+  </section>
+</div>
 </body>
 </html>
