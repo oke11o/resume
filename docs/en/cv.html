@@ -64,7 +64,7 @@
           color: cadetblue;
       }
 
-      .company-descr {
+      .company-location {
           width: 80%;
       }
 
@@ -78,12 +78,16 @@
           justify-content: space-between;
       }
 
-      .job-title {
-          text-align: right;
+      .job-company {
+          text-align: left;
       }
 
       .job-duration {
           text-align: left;
+      }
+
+      .job-position {
+          font-weight: bold;
       }
 
       /* Стиль только для печати */
@@ -142,19 +146,20 @@
   <section class="prof-experience">
     <h2 class="heading">Professional experience</h2>
     <div class="prof-experience-list">
-      <div class="prof-experience-list">
+      <div class="prof-experience-item">
         <div class="job-container">
-          <div class="job-title">
-            <h3>Senior Software Engineer</h3>
+          <div class="job-company">
+            <h3>Yandex LLC</h3>
+            <div class="company-descr">
+              Russian multinational technology company providing Internet-related products and services, including an
+              Internet search engine
+            </div>
           </div>
-          <div class="job-duration">Jul 2022 - Present</div>
+          <div class="job-duration">Jul 2022 ― Present</div>
         </div>
-        <div class="company-descr">
-          Yandex LLC - Russian multinational technology company providing Internet-related products and
-          services, including an Internet search engine<br>
-          <a href="https://yandex.ru/company/">yandex.ru/company/</a><br>
-          Moscow, Russia
+        <div class="company-location"><a href="https://yandex.ru/company/">yandex.ru/company/</a><br>Moscow, Russia
         </div>
+        <div class="job-position">Senior Software Engineer</div>
         <div class="job-descr">
           I work in the load testing tools team.
           We are building a cloud-based load testing tool that makes it easy to create and configure load generators in
@@ -169,6 +174,27 @@
         <div class="position-skills">
           <strong>Skills</strong>: Cloud Infrastructure · Distributed Systems · System Performance · Computer Science ·
           Software Infrastructure · Engineering · Load Testing · ClickHouse · Cloud Computing · PostgreSQL · Go · Redis
+        </div>
+      </div>
+      <div class="prof-experience-item">
+        <div class="job-container">
+          <div class="job-company">
+            <h3>Avito.ru</h3>
+            <div class="company-descr">Russian classified advertisements website</div>
+          </div>
+          <div class="job-duration">Dec 2020 ― Jul 2022<br> 1 yr 8 mos</div>
+        </div>
+        <div class="company-location"><a href="https://www.avito.ru/">avito.ru</a><br>Moscow, Russia</div>
+        <div class="job-position">Senior Software Engineer</div>
+        <div class="job-descr">
+          Worked in the AntiMonolith & SLA team. We created tools to analyze the reliability and availability of system
+          services. Based on this tool, we found the weakest points in the system. And we were optimizing these places.
+          I was engaged in optimization of the most important page of the site - the item card page. As a result of my
+          work, the response time of the card increased almost twice. And the reliability of the page rose to 99.9%
+        </div>
+        <div class="position-skills">
+          <strong>Skills</strong>: System Performance · Computer Science · Kubernetes · Software Infrastructure ·
+          Engineering · PostgreSQL · Docker · Go · Redis · Apache Kafka · PHP
         </div>
       </div>
     </div>
@@ -187,7 +213,7 @@
             in the direction of "Technology, equipment and automation of machine-building productions"
           </div>
         </div>
-        <div class="education-years">2006 - 2008</div>
+        <div class="education-years">2006 ― 2008</div>
       </li>
       <li class="education-item">
         <div class="education-title">
@@ -199,7 +225,7 @@
             in the direction of "Technology, equipment and automation of machine-building productions"
           </div>
         </div>
-        <div class="education-years">2002 - 2006</div>
+        <div class="education-years">2002 ― 2006</div>
       </li>
     </ul>
   </section>
