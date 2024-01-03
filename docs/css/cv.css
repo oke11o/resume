@@ -19,6 +19,9 @@ header p {
     margin-bottom: 0;
     margin-top: 2px;
 }
+header a {
+    color: black;
+}
 
 .table-2-column td:nth-child(1) {
     max-width: 30%;
