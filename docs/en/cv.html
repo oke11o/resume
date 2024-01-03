@@ -2,129 +2,27 @@
 <html lang="en">
 <head>
   <title>Sergei Bevzenko CV</title>
-  <style>
-      h1, h3 {
-          margin: 0;
-      }
-
-      body {
-          font-family: system-ui;
-          max-height: 100%;
-          margin: 2rem;
-      }
-
-      .table-3-column {
-          display: table;
-          width: 100%;
-          vertical-align: bottom;
-      }
-
-      .first-column {
-          display: table-cell;
-          width: 33%;
-          text-align: left;
-      }
-
-      .middle-column {
-          display: table-cell;
-          text-align: center;
-          vertical-align: middle;
-      }
-
-      .last-column {
-          display: table-cell;
-          width: 33%;
-          text-align: right;
-      }
-
-      .table-2-column {
-          display: table;
-          width: 100%;
-          margin-bottom: 1rem;
-
-      }
-
-      .table-2-column td:nth-child(1) {
-          max-width: 30%;
-          word-wrap: normal;
-          padding-right: 4rem;
-      }
-
-      .heading {
-          text-transform: uppercase;
-          margin-top: 1rem;
-      }
-
-      .justify-content {
-          text-align: justify;
-      }
-
-      .link {
-          text-decoration: none;
-          color: cadetblue;
-      }
-
-      .company-location {
-          width: 80%;
-      }
-
-      /* тут можно менять размер шрифт,а лучше один стиль и добавить к многословным абзацам  */
-      p, ul, li, .link {
-          font-size: clamp(1rem, calc(12px + 1vw), 14px);
-      }
-
-      .job-container {
-          display: flex;
-          justify-content: space-between;
-      }
-
-      .job-company {
-          text-align: left;
-      }
-
-      .job-duration {
-          text-align: left;
-      }
-
-      .job-position {
-          font-weight: bold;
-      }
-
-      /* Стиль только для печати */
-      @media print {
-          body {
-              font-size: 12pt; /* Меняем размер шрифта для печати */
-          }
-
-          h1 {
-              margin: 12pt;
-          }
-      }
-  </style>
+  <link rel="stylesheet" href="../css/cv.css">
 </head>
 
 <body>
 <div class="container">
-  <table class="table-3-column ">
-    <tbody>
-    <tr>
-      <td class="first-column">
-        <a href="https://www.linkedin.com/in/sergei-bevzenko/">linkedin.com/in/sergei-bevzenko</a>
-        <br>
-        <span>(+381) 638-021-986 </span>
-      </td>
-      <td class="middle-column">
+  <header>
+      <div class="column">
         <h1>Sergei Bevzenko</h1>
         <!--<p>Senior Software developer</p>-->
-      </td>
-      <td class="last-column">
+      </div>
+      <div class="column">
+        <a href="https://www.linkedin.com/in/sergei-bevzenko/">linkedin.com/in/sergei-bevzenko</a>
+        <br>
+        <a href="https://github.com/oke11o/resume">github.com/oke11o/resume</a>
+        <br>
         <a href="#">bevzenko.sergey@gmail.com</a>
         <br>
+<!--        <span>(+381) 638-021-986 </span>-->
         <!--<span>Novi Sad, Serbia</span>-->
-      </td>
-    </tr>
-    </tbody>
-  </table>
+      </div>
+  </header>
   <hr>
   <section>
     <p>
