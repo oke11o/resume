@@ -11,6 +11,11 @@ body {
     /*font-size: clamp(1rem, calc(12px + 1vw), 14px);*/
 }
 
+.container {
+    width: 720px;
+    margin: 0 auto;
+}
+
 header {
     display: flex;
     justify-content: space-between;
