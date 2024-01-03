@@ -15,9 +15,9 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
-header h1 {
-    text-align: center;
+header p {
+    margin-bottom: 0;
+    margin-top: 2px;
 }
 
 .table-2-column td:nth-child(1) {
@@ -75,13 +75,8 @@ section.skills ul {
     margin-top: 14px;
 }
 
-/*!* Стиль только для печати *!*/
-/*@media print {*/
-/*    body {*/
-/*        font-size: 12pt; !* Меняем размер шрифта для печати *!*/
-/*    }*/
-
-/*    h1 {*/
-/*        margin: 12pt;*/
-/*    }*/
-/*}*/
+@media print {
+    body {
+        margin: 0;
+    }
+}
