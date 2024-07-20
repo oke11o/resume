@@ -1,21 +1,22 @@
-
 h1, h3 {
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
+h3 {
+    margin-bottom: 4px;
+}
 body {
     font-family: system-ui;
     max-height: 100%;
     margin: 2rem;
     font-size: 10pt; /* Меняем размер шрифта для печати */
-    /*font-size: clamp(1rem, calc(12px + 1vw), 14px);*/
 }
-
 .container {
     width: 720px;
     margin: 0 auto;
 }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -27,62 +28,59 @@ header p {
 header a {
     color: black;
 }
-
 .table-2-column td:nth-child(1) {
     max-width: 30%;
     word-wrap: normal;
     padding-right: 4rem;
 }
-
 .heading {
     text-transform: uppercase;
     margin-top: 1rem;
+    margin-bottom: 8px;
 }
-
 .justify-content {
     text-align: justify;
 }
-
 .link {
     text-decoration: none;
     color: cadetblue;
 }
-
 .company-location {
     width: 80%;
 }
-
-/*!* тут можно менять размер шрифт,а лучше один стиль и добавить к многословным абзацам  *!*/
-/*p, ul, li, .link {*/
-/*    font-size: clamp(1rem, calc(12px + 1vw), 14px);*/
-/*}*/
-
 .job-container {
     display: flex;
     justify-content: space-between;
 }
-
 .job-company {
     text-align: left;
+    width: 560px;
 }
-
+.job-company h3 span.left {
+    font-weight: 700;
+    font-size: 16px;
+}
+.job-company h3 span.right {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: auto;
+}
 .job-duration {
     text-align: left;
 }
-
 .job-position {
     font-weight: bold;
     margin-top: 6px;
 }
-
+.position-skills {
+    margin-top: 5px;
+}
 section.skills ul {
     columns: 4;
 }
-
 .prof-experience-item {
-    margin-top: 14px;
+    margin-top: 12px;
 }
-
 @media print {
     body {
         margin: 0;
