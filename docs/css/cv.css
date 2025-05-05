@@ -72,6 +72,15 @@ header a {
     font-weight: bold;
     margin-top: 6px;
 }
+.job-descr {
+}
+.job-project {
+}
+.job-project-title {
+}
+.job-project-descr {
+    margin-left: 10px;
+}
 .position-skills {
     margin-top: 5px;
 }
